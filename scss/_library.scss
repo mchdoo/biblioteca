@@ -1,0 +1,117 @@
+.libros {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.libro-preview {
+    height: 70px;
+    margin: 10px 0;
+    background-color: $background;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    line-height: 50px;
+    vertical-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+    .titulo {
+        width: 25%;
+        border-radius: 10px 0 0 10px;
+
+        h2 {
+            color: $primary;
+            margin: 10px 30px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+            @include breakpoint-down(medium){
+                width: 50vw;
+            }
+        }
+    }
+
+    .autor {
+        width: 35%;
+
+        p {
+            margin: 10px 30px
+        }
+    }
+
+    .info {
+        width: 30%;
+
+        p {
+            margin: 10px 30px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .mas-info {
+        margin: 10px;
+        height: 50px;
+        line-height: 40px;
+        font-size: 50px;
+        width: 50px;
+        text-align: center;
+        vertical-align: middle;
+        color: grey;
+        border-radius: 5px;
+        transition: 0.1s ease-in-out;
+        
+        &:hover {
+            background-color: #383838;
+            
+        }
+        
+    }
+}
+
+.search{
+
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    @include breakpoint-down(medium){
+        width: 100%;
+        margin: 0;
+    }
+
+   .searchbar {
+        color: white;
+        width: 94%;
+        height: 20px;
+        padding: 5px 3%;
+        background: $foreground;
+        border: 1px solid $line;
+        border-radius: 10px;
+        outline: none;
+        transition: 0.3s ease;
+
+        &:focus {
+            background: $background;
+            border: 1px solid transparent;
+        } 
+    }
+
+    span {
+        color: $line;
+        position: absolute;
+        top: 20px;
+
+        right: 15%;
+        padding: 5px 1%;
+
+        @include breakpoint-down(medium){
+            right: 0;
+            top: 0;
+        }
+    }
+}

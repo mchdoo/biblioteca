@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+body, html {
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    background-color: $foreground;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+.content{
+    position: absolute;
+    margin: 20px 0;
+    top: 50px;
+    width: 80vw;
+    left: 10vw;
+
+    @include breakpoint-down(medium) {
+        width: 80vw;
+        left: 10vw;
+    }
+
+    &--inner {
+        position: absolute;
+        width: 80vw;
+        left: 10vw;
+    }
+    
+}
+
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large){
+        display: none;
+    }
+}

@@ -1,0 +1,70 @@
+{
+  "libros": [
+    {
+      "titulo": "Amanecer",
+      "autor": "Stephenie Meyer",
+      "genero": "Misterio",
+      "info": "La saga es una serie de cinco películas de fantasía romántica de Summit Entertainment, basada en las cuatro novelas de la autora estadounidense Stephenie Meyer.",
+      "fila": "1",
+      "columna": "C",
+      "saga": true,
+      "tituloSaga": "Crepúsculo",
+      "id": 3
+    },
+    {
+      "titulo": "La Comunidad del Anillo",
+      "autor": "JRR Tolkien",
+      "genero": "Fantástico",
+      "info": "El primer libro del señor de los anillos",
+      "columna": "C",
+      "fila": "1",
+      "saga": true,
+      "tituloSaga": "El Señor de los Anillos",
+      "id": 4
+    },
+    {
+      "titulo": "Las Dos Torres",
+      "autor": "JRR Tolkien",
+      "genero": "Fantástico",
+      "info": "El segundo libro del señor de los anillos",
+      "columna": "C",
+      "fila": "1",
+      "saga": true,
+      "tituloSaga": "El Señor de los Anillos",
+      "id": 5
+    },
+    {
+      "titulo": "El Retorno del Rey",
+      "autor": "JRR Tolkien",
+      "genero": "Fantástico",
+      "info": "El tercer libro del señor de los anillos",
+      "columna": "C",
+      "fila": "1",
+      "saga": true,
+      "tituloSaga": "El Señor de los Anillos",
+      "id": 6
+    },
+    {
+      "titulo": "El Silmarillion",
+      "autor": "JRR Tolkien",
+      "genero": "Fantástico",
+      "info": "El cuarto libro del señor de los anillos",
+      "columna": "C",
+      "fila": "1",
+      "saga": true,
+      "tituloSaga": "El Señor de los Anillos",
+      "id": 7
+    },
+    {
+      "titulo": "El Psicoanalista",
+      "autor": "John Katzenbach",
+      "genero": "Suspenso",
+      "info": "Un libro sobre un psicoanalista creo",
+      "columna": "C",
+      "fila": "1",
+      "saga": false,
+      "tituloSaga": "",
+      "id": 8
+    }
+  ]
+}
