@@ -8,7 +8,7 @@ const Library = () => {
 
     const hayScroll = false;
 
-    const { data: libros, isLoading, error } = useFetch('http://192.168.1.28:8000/libros')
+    const { data: libros, isLoading, error } = useFetch('http://localhost:8000/libros')
 
     const [search, setSearch] = useState('');
 
