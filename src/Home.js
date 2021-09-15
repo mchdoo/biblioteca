@@ -10,7 +10,7 @@ import BlobTwo from './img/Path 5.svg';
 
 function Home()  {
     
-    const { data: libros, isLoading, error } = useFetch('http://localhost:8000/libros')
+    const { data: libros, isLoading, error } = useFetch('http://192.168.1.28:8000/libros')
     
     return (
         <div className='hero'>
