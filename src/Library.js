@@ -8,7 +8,7 @@ const Library = () => {
 
     const hayScroll = false;
 
-    const { data: libros, isLoading, error } = useFetch('http://myjson.dit.upm.es/api/bins/fwgn/libros')
+    const { data: libros, isLoading, error } = useFetch('https://my-json-server.typicode.com/mchdoo/json-server-db/libros')
 
     const [search, setSearch] = useState('');
 

@@ -5,12 +5,12 @@ import { useState } from "react";
 
 const LibroDetails = () => {
     const { id } = useParams()
-    const { data: libro, error, isLoading } = useFetch('http://myjson.dit.upm.es/api/bins/fwgn/libros/' + id)
+    const { data: libro, error, isLoading } = useFetch('https://my-json-server.typicode.com/mchdoo/json-server-db/libros/' + id)
     const history = useHistory();
     const [open, setOpen] = useState(false);
 
     const handleDelete = () =>{
-        fetch('http://myjson.dit.upm.es/api/bins/fwgn/libros/' + id, {
+        fetch('https://my-json-server.typicode.com/mchdoo/json-server-db/libros/' + id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');  

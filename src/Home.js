@@ -10,7 +10,7 @@ import BlobTwo from './img/Path 5.svg';
 
 function Home()  {
     
-    const { data: libros, isLoading, error } = useFetch('http://myjson.dit.upm.es/api/bins/fwgn/libros')
+    const { data: libros, isLoading, error } = useFetch('https://my-json-server.typicode.com/mchdoo/json-server-db/libros')
     
     return (
         <div className='hero'>

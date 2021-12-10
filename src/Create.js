@@ -30,7 +30,7 @@ const Create = () => {
 
         setIsPending(true)
 
-        fetch('http://myjson.dit.upm.es/api/bins/fwgn/libros', {
+        fetch('https://my-json-server.typicode.com/mchdoo/json-server-db/libros', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(libro)
