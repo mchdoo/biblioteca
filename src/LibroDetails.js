@@ -5,12 +5,12 @@ import { useState } from "react";
 
 const LibroDetails = () => {
     const { id } = useParams()
-    const { data: libro, error, isLoading } = useFetch('http://192.168.1.28:8000/libros/' + id)
+    const { data: libro, error, isLoading } = useFetch('http://myjson.dit.upm.es/api/bins/fwgn/libros/' + id)
     const history = useHistory();
     const [open, setOpen] = useState(false);
 
     const handleDelete = () =>{
-        fetch('http://192.168.1.28:8000/libros/' + id, {
+        fetch('http://myjson.dit.upm.es/api/bins/fwgn/libros/' + id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');  

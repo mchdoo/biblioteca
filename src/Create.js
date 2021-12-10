@@ -30,7 +30,7 @@ const Create = () => {
 
         setIsPending(true)
 
-        fetch('http://192.168.1.28:8000/libros', {
+        fetch('http://myjson.dit.upm.es/api/bins/fwgn/libros', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(libro)
