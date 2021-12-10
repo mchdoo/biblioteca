@@ -37,7 +37,7 @@ const Create = () => {
         }).then(() => {
             console.log('added')
             setIsPending(false);
-            history.push('/')
+            history.push('/libros')
 
         })
     }
